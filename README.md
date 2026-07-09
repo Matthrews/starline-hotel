@@ -59,18 +59,24 @@ wrangler pages deploy . --project-name=starlinehotel
 After deployment, set the **Website** field in your GBP to:
 
 ```
-https://starlinehotel.pages.dev
+https://www.starlinehotel.workers.dev/
 ```
 
-or your custom domain:
+or your custom domain when added:
 
 ```
 https://starlinehotel.co.tz
 ```
 
+## Live Site
+
+**https://www.starlinehotel.workers.dev/**
+
+Deployed on Cloudflare Workers (static assets via `wrangler.jsonc`).
+
 ## SEO
 
-- Canonical URL: `https://starline-hotel.starlinehoteltz.workers.dev/` (update in `index.html`, `sitemap.xml`, `robots.txt` when custom domain is added)
+- Canonical URL: `https://www.starlinehotel.workers.dev/` (in `index.html`, `sitemap.xml`, `robots.txt`)
 - `robots.txt` and `sitemap.xml` included for search engine crawlers
 - Schema.org: Hotel, WebSite, FAQPage with TZS pricing
 - Submit sitemap in [Google Search Console](https://search.google.com/search-console) after deployment

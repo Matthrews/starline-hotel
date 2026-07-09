@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://starline-hotel.starlinehoteltz.workers.dev/sitemap.xml
+Sitemap: https://www.starlinehotel.workers.dev/sitemap.xml
