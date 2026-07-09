@@ -68,6 +68,13 @@ or your custom domain:
 https://starlinehotel.co.tz
 ```
 
+## SEO
+
+- Canonical URL: `https://starline-hotel.starlinehoteltz.workers.dev/` (update in `index.html`, `sitemap.xml`, `robots.txt` when custom domain is added)
+- `robots.txt` and `sitemap.xml` included for search engine crawlers
+- Schema.org: Hotel, WebSite, FAQPage with TZS pricing
+- Submit sitemap in [Google Search Console](https://search.google.com/search-console) after deployment
+
 ## Customization Checklist
 
 - [ ] Replace placeholder images in `images/` with real hotel photos (see `images/README.md`)

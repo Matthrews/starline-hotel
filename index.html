@@ -1,61 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-TZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Starline Hotel — 5-star comfort in Dodoma, Tanzania. Free breakfast, WiFi & parking. Book rooms, dine at our restaurant, or host events in our conference hall.">
-  <meta name="keywords" content="Starline Hotel, Dodoma hotel, Tanzania hotel, Dodoma accommodation, conference hall Dodoma">
+  <title>Starline Hotel Dodoma | 5-Star Hotel in Tanzania — Book Direct</title>
+  <meta name="description" content="Starline Hotel — 5-star hotel in Dodoma, Tanzania near DUWASA Roundabout & Dodoma Airport. Free breakfast, WiFi & parking. Rooms from TZS 105,000/night. Book on WhatsApp.">
+  <meta name="keywords" content="Starline Hotel, Starline Hotel Dodoma, hotel Dodoma Tanzania, 5 star hotel Dodoma, Dodoma accommodation, hotel near Dodoma airport, conference hall Dodoma, Dodoma restaurant hotel">
   <meta name="author" content="Starline Hotel">
-  <meta property="og:title" content="Starline Hotel | Comfort & Convenience in Dodoma">
-  <meta property="og:description" content="5-star hotel in Dodoma with free breakfast, high-speed WiFi, restaurant & conference facilities.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://starlinehotel.pages.dev">
-  <meta property="og:image" content="https://starline-hotel.starlinehoteltz.workers.dev/images/exterior-day-2.jpg">
-  <meta name="theme-color" content="#1a3a4a">
-  <title>Starline Hotel | Comfort & Convenience in Dodoma</title>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="geo.region" content="TZ-03">
+  <meta name="geo.placename" content="Dodoma">
+  <meta name="geo.position" content="-6.1725;35.7397">
+  <meta name="ICBM" content="-6.1725, 35.7397">
+  <link rel="canonical" href="https://starline-hotel.starlinehoteltz.workers.dev/">
   <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <meta name="theme-color" content="#1a3a4a">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Starline Hotel">
+  <meta property="og:title" content="Starline Hotel Dodoma | 5-Star Hotel in Tanzania">
+  <meta property="og:description" content="5-star hotel in Dodoma with free breakfast, high-speed WiFi, restaurant, gym & conference facilities. Rooms from TZS 105,000/night.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://starline-hotel.starlinehoteltz.workers.dev/">
+  <meta property="og:image" content="https://starline-hotel.starlinehoteltz.workers.dev/images/exterior-day-2.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Starline Hotel Dodoma — building exterior with rooftop signage">
+  <meta property="og:locale" content="en_TZ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starline Hotel Dodoma | 5-Star Hotel in Tanzania">
+  <meta name="twitter:description" content="Free breakfast, WiFi & parking. Near Dodoma Airport. Book direct on WhatsApp.">
+  <meta name="twitter:image" content="https://starline-hotel.starlinehoteltz.workers.dev/images/exterior-day-2.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Hotel",
-    "name": "Starline Hotel",
-    "description": "5-star hotel in Dodoma, Tanzania with free buffet breakfast, high-speed WiFi, restaurant, and conference facilities.",
-    "image": "https://starline-hotel.starlinehoteltz.workers.dev/images/exterior-day-2.jpg",
-    "url": "https://starlinehotel.pages.dev",
-    "telephone": ["+255-764-302-888", "+255-26-232-1888"],
-    "email": "starlinehoteltz@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Biringi Avenue, near DUWASA Roundabout",
-      "addressLocality": "Dodoma",
-      "postalCode": "41000",
-      "addressCountry": "TZ"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -6.1725,
-      "longitude": 35.7397
-    },
-    "starRating": { "@type": "Rating", "ratingValue": "5" },
-    "priceRange": "TZS 105,000 – 315,000",
-    "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Free Breakfast", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Conference Hall", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Fitness Center", "value": true }
-    ],
-    "checkinTime": "13:00",
-    "checkoutTime": "11:00"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://starline-hotel.starlinehoteltz.workers.dev/#website",
+        "url": "https://starline-hotel.starlinehoteltz.workers.dev/",
+        "name": "Starline Hotel",
+        "description": "Official website of Starline Hotel, a 5-star hotel in Dodoma, Tanzania.",
+        "publisher": { "@id": "https://starline-hotel.starlinehoteltz.workers.dev/#hotel" },
+        "inLanguage": "en-TZ"
+      },
+      {
+        "@type": "Hotel",
+        "@id": "https://starline-hotel.starlinehoteltz.workers.dev/#hotel",
+        "name": "Starline Hotel",
+        "alternateName": "Starline Hotel Dodoma",
+        "description": "5-star hotel in Dodoma, Tanzania with 97 rooms, free buffet breakfast, high-speed WiFi, restaurant, fitness center, and conference facilities.",
+        "url": "https://starline-hotel.starlinehoteltz.workers.dev/",
+        "image": [
+          "https://starline-hotel.starlinehoteltz.workers.dev/images/exterior-day-2.jpg",
+          "https://starline-hotel.starlinehoteltz.workers.dev/images/entrance.jpg",
+          "https://starline-hotel.starlinehoteltz.workers.dev/images/reception.jpg"
+        ],
+        "logo": "https://starline-hotel.starlinehoteltz.workers.dev/images/logo.png",
+        "telephone": ["+255-764-302-888", "+255-26-232-1888"],
+        "email": "starlinehoteltz@gmail.com",
+        "priceRange": "TZS 105,000 – 315,000",
+        "currenciesAccepted": "TZS",
+        "paymentAccepted": "Cash, Mobile Money",
+        "numberOfRooms": 97,
+        "starRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "8.5",
+          "bestRating": "10",
+          "ratingCount": "50"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Biringi Avenue, near DUWASA Roundabout",
+          "addressLocality": "Dodoma",
+          "addressRegion": "Dodoma",
+          "postalCode": "41000",
+          "addressCountry": "TZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.1725,
+          "longitude": 35.7397
+        },
+        "hasMap": "https://g.page/r/CaS4CpzZ462_EBM",
+        "sameAs": [
+          "https://g.page/r/CaS4CpzZ462_EBM",
+          "https://www.trip.com/hotels/detail/?hotelId=134035646"
+        ],
+        "checkinTime": "13:00",
+        "checkoutTime": "11:00",
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free Breakfast", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Fitness Center", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Conference Hall", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Standard Single Room",
+            "price": "105000",
+            "priceCurrency": "TZS",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Deluxe Single Room",
+            "price": "145000",
+            "priceCurrency": "TZS",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Luxury Single Room",
+            "price": "198000",
+            "priceCurrency": "TZS",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Deluxe Studio Suite",
+            "price": "250000",
+            "priceCurrency": "TZS",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Suite, City View",
+            "price": "315000",
+            "priceCurrency": "TZS",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Starline Hotel located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Starline Hotel is located on Biringi Avenue, near DUWASA Roundabout, Dodoma 41000, Tanzania — approximately 3 minutes from Dodoma Airport (DOD)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Starline Hotel include breakfast?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Complimentary buffet breakfast is served daily from 7:00 AM to 11:30 AM for all guests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I book a room at Starline Hotel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Book directly via WhatsApp at +255 764 302 888, call +255 26 232 1888, or email starlinehoteltz@gmail.com. You can also book through Trip.com and other online travel platforms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What facilities does Starline Hotel offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Starline Hotel offers 97 air-conditioned rooms, a restaurant with buffet breakfast, fitness center, conference hall, free WiFi, and complimentary self-parking."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Floating action buttons -->
   <div class="fab-group" aria-label="Quick contact">
@@ -71,7 +205,7 @@
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#home" class="nav-logo">
-        <img src="images/logo.png" alt="Starline Hotel" class="logo-img" width="160" height="48">
+        <img src="images/logo.png" alt="Starline Hotel Dodoma — 5-star hotel logo" class="logo-img" width="160" height="48">
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -83,18 +217,19 @@
         <li><a href="#fitness">Fitness</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#book" class="nav-cta">Book Now</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
+  <main id="main-content">
+  <section class="hero" id="home" aria-label="Welcome">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <img src="images/logo.png" alt="Starline Hotel" class="hero-logo" width="200" height="60">
+      <img src="images/logo.png" alt="Starline Hotel Dodoma — 5-star hotel in Tanzania" class="hero-logo" width="200" height="60">
       <p class="hero-eyebrow">Dodoma, Tanzania</p>
       <h1 class="hero-title">Starline Hotel</h1>
       <p class="hero-tagline">Comfort &amp; Convenience in Dodoma</p>
@@ -424,6 +559,38 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <p class="section-eyebrow">Helpful Info</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Where is Starline Hotel located?</summary>
+          <p>Starline Hotel is on Biringi Avenue, near DUWASA Roundabout, Dodoma 41000, Tanzania — about 3 minutes from Dodoma Airport (DOD).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the hotel include breakfast?</summary>
+          <p>Yes. Complimentary buffet breakfast is served daily from 7:00 AM to 11:30 AM for all guests.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How can I book a room?</summary>
+          <p>Book direct via <a href="https://wa.me/255764302888">WhatsApp</a>, call <a href="tel:+255764302888">+255 764 302 888</a>, or email <a href="mailto:starlinehoteltz@gmail.com">starlinehoteltz@gmail.com</a>. Online booking is also available on Trip.com and other platforms.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What facilities are available?</summary>
+          <p>97 air-conditioned rooms, restaurant, fitness center, conference hall, free high-speed WiFi, and complimentary self-parking.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What currency are prices shown in?</summary>
+          <p>All room rates on this website are shown in <strong>TZS (Tanzanian Shillings)</strong>. Contact us for the latest rates and availability.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Book with Partners -->
   <section class="section partners" id="book">
     <div class="container">
@@ -458,12 +625,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#home" class="nav-logo">
-          <img src="images/logo.png" alt="Starline Hotel" class="logo-img" width="160" height="48">
+          <img src="images/logo.png" alt="Starline Hotel Dodoma — 5-star hotel logo" class="logo-img" width="160" height="48">
         </a>
         <p>5-star comfort in the heart of Dodoma. Free breakfast, WiFi &amp; parking for every guest.</p>
       </div>
@@ -475,6 +644,7 @@
           <li><a href="#conference">Conference Hall</a></li>
           <li><a href="#fitness">Fitness Center</a></li>
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#location">Location</a></li>
         </ul>
       </div>
