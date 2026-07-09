@@ -280,8 +280,9 @@ a:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80') center/cover no-repeat;
+  background-color: var(--color-primary-dark);
+  background-image:
+    url('images/hero.jpg') center/cover no-repeat;
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
 }
@@ -513,6 +514,7 @@ a:hover {
 
 .room-img {
   height: 220px;
+  background-color: var(--color-bg-alt);
   background-size: cover;
   background-position: center;
 }

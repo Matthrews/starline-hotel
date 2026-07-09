@@ -1,31 +1,29 @@
 (function () {
   'use strict';
 
-  // Gallery images — replace with real hotel photos
   const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80', alt: 'Hotel exterior' },
-    { src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80', alt: 'Guest room' },
-    { src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80', alt: 'Suite living area' },
-    { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Restaurant dining' },
-    { src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80', alt: 'Bar and lounge' },
-    { src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', alt: 'Conference hall' },
-    { src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80', alt: 'Meeting setup' },
-    { src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80', alt: 'Deluxe room' },
-    { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80', alt: 'Luxury room' },
-    { src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80', alt: 'Pool area' },
-    { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80', alt: 'Hotel lobby' },
-    { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80', alt: 'Hotel facade' },
-    { src: 'https://images.unsplash.com/photo-1591088390512-2c049524296b?w=800&q=80', alt: 'Room amenities' },
-    { src: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80', alt: 'Breakfast buffet' },
-    { src: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80', alt: 'City view' },
-    { src: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80', alt: 'Cozy bedroom' },
-    { src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80', alt: 'Modern bathroom' },
-    { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', alt: 'Business workspace' },
-    { src: 'https://images.unsplash.com/photo-1519167758481-83f29da8c2f3?w=800&q=80', alt: 'Event space' },
-    { src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80', alt: 'Hotel grounds' },
+    { src: 'images/gallery-01.jpg', alt: 'Hotel exterior' },
+    { src: 'images/gallery-02.jpg', alt: 'Guest room' },
+    { src: 'images/gallery-03.jpg', alt: 'Suite living area' },
+    { src: 'images/gallery-04.jpg', alt: 'Restaurant dining' },
+    { src: 'images/gallery-05.jpg', alt: 'Bar and lounge' },
+    { src: 'images/gallery-06.jpg', alt: 'Conference hall' },
+    { src: 'images/gallery-07.jpg', alt: 'Meeting setup' },
+    { src: 'images/gallery-08.jpg', alt: 'Deluxe room' },
+    { src: 'images/gallery-09.jpg', alt: 'Luxury room' },
+    { src: 'images/gallery-10.jpg', alt: 'Pool area' },
+    { src: 'images/gallery-11.jpg', alt: 'Hotel facade' },
+    { src: 'images/gallery-12.jpg', alt: 'Room amenities' },
+    { src: 'images/gallery-13.jpg', alt: 'Breakfast buffet' },
+    { src: 'images/gallery-14.jpg', alt: 'City view' },
+    { src: 'images/gallery-15.jpg', alt: 'Cozy bedroom' },
+    { src: 'images/gallery-16.jpg', alt: 'Modern bathroom' },
+    { src: 'images/gallery-17.jpg', alt: 'Business workspace' },
+    { src: 'images/gallery-18.jpg', alt: 'Event space' },
+    { src: 'images/gallery-19.jpg', alt: 'Hotel grounds' },
+    { src: 'images/gallery-20.jpg', alt: 'Hotel lobby' },
   ];
 
-  // Build gallery
   const galleryGrid = document.getElementById('galleryGrid');
   if (galleryGrid) {
     galleryImages.forEach(function (img, i) {
@@ -38,7 +36,6 @@
     });
   }
 
-  // Lightbox
   var currentIndex = 0;
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
@@ -83,7 +80,6 @@
     if (e.key === 'ArrowRight') showNext();
   });
 
-  // Header scroll effect
   var header = document.getElementById('header');
   function onScroll() {
     header.classList.toggle('scrolled', window.scrollY > 60);
@@ -91,7 +87,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // Mobile nav
   var navToggle = document.getElementById('navToggle');
   var navMenu = document.getElementById('navMenu');
 
@@ -109,7 +104,6 @@
     });
   });
 
-  // Fade-in on scroll
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {

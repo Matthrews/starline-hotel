@@ -70,10 +70,7 @@ https://starlinehotel.co.tz
 
 ## Customization Checklist
 
-- [ ] Replace Unsplash placeholder images with real hotel photos (update `index.html` and `js/main.js`)
-- [ ] Update Google Review link with your exact GBP place URL (search "Starline Hotel Dodoma" on Google Maps → Share → copy link)
-- [ ] Verify phone numbers and WhatsApp number
-- [ ] Add `images/og-cover.jpg` (1200×630) for social sharing preview
+- [ ] Replace placeholder images in `images/` with real hotel photos (see `images/README.md`)
 - [ ] Update room prices when they change
 
 ## Tech Stack
@@ -88,7 +85,7 @@ https://starlinehotel.co.tz
 | Field | Value |
 |-------|-------|
 | Address | Biringi Avenue, near DUWASA Roundabout, Dodoma 41000, Tanzania |
-| Phone | +255 764 302 888 / +255 26 232 1888 |
+| Phone | +255 764 302 888 / +255 262 321 888 |
 | Email | starlinehoteltz@gmail.com |
 | Check-in | 1:00 PM |
 | Check-out | 11:00 AM |
