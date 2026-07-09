@@ -135,4 +135,91 @@
   var style = document.createElement('style');
   style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
   document.head.appendChild(style);
+
+  // Reviews carousel — edit this list with your real Google reviews
+  var reviews = [
+    {
+      text: 'Clean, modern rooms and very friendly staff. The breakfast buffet had great variety and the location near the airport was perfect for our business trip.',
+      name: 'Ahmed M.',
+      source: 'Google Review',
+      rating: 5,
+    },
+    {
+      text: 'One of the best new hotels in Dodoma. Spacious rooms, fast WiFi, and a lovely restaurant. The conference facilities were ideal for our meeting.',
+      name: 'Grace K.',
+      source: 'Google Review',
+      rating: 5,
+    },
+    {
+      text: 'Beautiful property with excellent service. The gym and rooms were spotless, and the staff went out of their way to help. Highly recommended.',
+      name: 'David L.',
+      source: 'Trip.com',
+      rating: 5,
+    },
+    {
+      text: 'Great value for money. Comfortable bed, quiet room, and delicious breakfast. Will definitely stay again on my next visit to Dodoma.',
+      name: 'Fatma S.',
+      source: 'Google Review',
+      rating: 4,
+    },
+  ];
+
+  var track = document.getElementById('reviewsTrack');
+  var dotsWrap = document.getElementById('reviewsDots');
+
+  if (track && dotsWrap && reviews.length) {
+    var reviewIndex = 0;
+    var reviewTimer = null;
+
+    reviews.forEach(function (r) {
+      var stars = '';
+      for (var i = 0; i < 5; i++) { stars += i < r.rating ? '★' : '☆'; }
+      var card = document.createElement('div');
+      card.className = 'review-card';
+      card.innerHTML =
+        '<div class="review-card-inner">' +
+          '<div class="review-stars">' + stars + '</div>' +
+          '<p class="review-quote">&ldquo;' + r.text + '&rdquo;</p>' +
+          '<div class="review-author">' +
+            '<span class="review-avatar">' + r.name.charAt(0) + '</span>' +
+            '<span class="review-meta">' +
+              '<span class="review-name">' + r.name + '</span><br>' +
+              '<span class="review-source">' + r.source + '</span>' +
+            '</span>' +
+          '</div>' +
+        '</div>';
+      track.appendChild(card);
+
+      var dot = document.createElement('button');
+      dot.className = 'reviews-dot';
+      dot.setAttribute('aria-label', 'Go to review ' + (dotsWrap.children.length + 1));
+      dot.addEventListener('click', function () {
+        var idx = Array.prototype.indexOf.call(dotsWrap.children, dot);
+        goToReview(idx);
+        restartAuto();
+      });
+      dotsWrap.appendChild(dot);
+    });
+
+    function goToReview(i) {
+      reviewIndex = (i + reviews.length) % reviews.length;
+      track.style.transform = 'translateX(-' + (reviewIndex * 100) + '%)';
+      Array.prototype.forEach.call(dotsWrap.children, function (d, di) {
+        d.classList.toggle('active', di === reviewIndex);
+      });
+    }
+
+    function restartAuto() {
+      if (reviewTimer) clearInterval(reviewTimer);
+      reviewTimer = setInterval(function () { goToReview(reviewIndex + 1); }, 6000);
+    }
+
+    var prevBtn = document.getElementById('reviewPrev');
+    var nextBtn = document.getElementById('reviewNext');
+    if (prevBtn) prevBtn.addEventListener('click', function () { goToReview(reviewIndex - 1); restartAuto(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goToReview(reviewIndex + 1); restartAuto(); });
+
+    goToReview(0);
+    restartAuto();
+  }
 })();

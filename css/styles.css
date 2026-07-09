@@ -887,6 +887,235 @@ a:hover {
   max-width: 480px;
 }
 
+/* ---- Reviews Carousel ---- */
+.reviews-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.reviews-score {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.reviews-summary-text {
+  text-align: left;
+}
+
+.reviews-stars {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.reviews-summary-text p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.reviews-carousel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.reviews-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-card {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.review-card-inner {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-quote {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.review-stars {
+  color: var(--color-accent);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.review-meta {
+  text-align: left;
+}
+
+.review-name {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.review-source {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.reviews-arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.reviews-arrow:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.reviews-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  transition: all var(--transition);
+  padding: 0;
+}
+
+.reviews-dot.active {
+  background: var(--color-accent);
+  width: 24px;
+  border-radius: 5px;
+}
+
+.reviews-actions {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* ---- Partners / Booking ---- */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px 24px;
+  background: var(--color-white);
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+
+.partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  color: inherit;
+}
+
+.partner-card--direct {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border: none;
+  color: var(--color-white);
+}
+
+.partner-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.partner-name {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.partner-card--direct .partner-name {
+  color: var(--color-white);
+}
+
+.partner-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.partner-card--direct .partner-desc {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 /* ---- Footer ---- */
 .footer {
   background: var(--color-primary-dark);
