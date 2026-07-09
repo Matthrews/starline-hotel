@@ -1,26 +1,18 @@
 # Images
 
-## Hotel photos (provided)
+## Hotel photos (installed)
 
-| File | Description | Used on site |
-|------|-------------|--------------|
-| `logo.png` | Starline Hotel logo | Header, footer, favicon, hero |
-| `entrance.jpg` | Storefront / main entrance at night | Gallery |
-| `exterior-night-1.jpg` | Aerial night view | Hero background, og-cover, gallery |
-| `exterior-night-2.jpg` | Aerial night view (alternate angle) | Gallery |
-
-## Still needed (replace tiny placeholders)
-
-| File | Used for |
-|------|----------|
-| `room-standard.jpg` | Standard Single Room |
-| `room-deluxe.jpg` | Deluxe Single Room |
-| `room-luxury.jpg` | Luxury Single Room |
-| `room-studio-suite.jpg` | Deluxe Studio Suite |
-| `room-suite.jpg` | Suite, City View |
-| `restaurant-1.jpg` | Restaurant section |
-| `restaurant-2.jpg` | Restaurant section |
-| `conference-1.jpg` | Conference Hall section |
-| `conference-2.jpg` | Conference Hall section |
-
-Drop in new photos with the **same filename** — no code changes needed.
+| File | Description |
+|------|-------------|
+| `logo.png` | Starline Hotel logo |
+| `exterior-day-1.jpg` … `exterior-day-4.jpg` | Daytime building exterior |
+| `exterior-night-1.jpg` … `exterior-night-3.jpg` | Night exterior |
+| `entrance.jpg` | Storefront entrance |
+| `reception.jpg` | Front desk / reception |
+| `lobby-1.jpg`, `lobby-2.jpg`, `lounge-3.jpg` | Lobby & lounge |
+| `room-standard.jpg` … `room-suite.jpg` | Guest rooms (5 types) |
+| `gym-1.jpg`, `gym-2.jpg` | Fitness center |
+| `bathroom-1.jpg`, `bathroom-2.jpg` | Bathrooms |
+| `restaurant-1.jpg` … `restaurant-6.jpg` | Restaurant & breakfast buffet |
+| `food-1.jpg` … `food-3.jpg` | Food & fresh fruit |
+| `conference-1.jpg`, `conference-2.jpg` | Conference / meeting rooms |
