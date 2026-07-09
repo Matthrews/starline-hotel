@@ -2,26 +2,9 @@
   'use strict';
 
   const galleryImages = [
-    { src: 'images/gallery-01.jpg', alt: 'Hotel exterior' },
-    { src: 'images/gallery-02.jpg', alt: 'Guest room' },
-    { src: 'images/gallery-03.jpg', alt: 'Suite living area' },
-    { src: 'images/gallery-04.jpg', alt: 'Restaurant dining' },
-    { src: 'images/gallery-05.jpg', alt: 'Bar and lounge' },
-    { src: 'images/gallery-06.jpg', alt: 'Conference hall' },
-    { src: 'images/gallery-07.jpg', alt: 'Meeting setup' },
-    { src: 'images/gallery-08.jpg', alt: 'Deluxe room' },
-    { src: 'images/gallery-09.jpg', alt: 'Luxury room' },
-    { src: 'images/gallery-10.jpg', alt: 'Pool area' },
-    { src: 'images/gallery-11.jpg', alt: 'Hotel facade' },
-    { src: 'images/gallery-12.jpg', alt: 'Room amenities' },
-    { src: 'images/gallery-13.jpg', alt: 'Breakfast buffet' },
-    { src: 'images/gallery-14.jpg', alt: 'City view' },
-    { src: 'images/gallery-15.jpg', alt: 'Cozy bedroom' },
-    { src: 'images/gallery-16.jpg', alt: 'Modern bathroom' },
-    { src: 'images/gallery-17.jpg', alt: 'Business workspace' },
-    { src: 'images/gallery-18.jpg', alt: 'Event space' },
-    { src: 'images/gallery-19.jpg', alt: 'Hotel grounds' },
-    { src: 'images/gallery-20.jpg', alt: 'Hotel lobby' },
+    { src: 'images/exterior-night-1.jpg', alt: 'Starline Hotel exterior at night — aerial view' },
+    { src: 'images/exterior-night-2.jpg', alt: 'Starline Hotel building illuminated at night' },
+    { src: 'images/entrance.jpg', alt: 'Starline Hotel entrance and lobby' },
   ];
 
   const galleryGrid = document.getElementById('galleryGrid');

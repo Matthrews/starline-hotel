@@ -166,14 +166,35 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-white);
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 600;
 }
 
 .nav-logo:hover {
-  color: var(--color-accent-light);
+  opacity: 0.92;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer-brand .logo-img {
+  height: 56px;
+}
+
+.hero-logo {
+  height: clamp(56px, 12vw, 80px);
+  width: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .logo-star {
@@ -669,8 +690,10 @@ a:hover {
 /* ---- Gallery ---- */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .gallery-item {
@@ -705,8 +728,8 @@ a:hover {
 }
 
 .gallery-item:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 /* ---- Lightbox ---- */
@@ -1003,7 +1026,7 @@ a:hover {
   }
 
   .gallery-item:nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
   }
 
@@ -1074,11 +1097,12 @@ a:hover {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 480px;
   }
 
   .gallery-item:nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 
   .reviews-cta-inner {
