@@ -223,15 +223,14 @@
     restartAuto();
   }
 
-  /* Lazy-load hotel promo video when near viewport */
+  /* Lazy-load YouTube embed when near viewport */
   var promoVideo = document.getElementById('promoVideo');
   if (promoVideo) {
-    var source = promoVideo.querySelector('source[data-src]');
     function loadPromoVideo() {
-      if (!source || source.src) return;
-      source.src = source.getAttribute('data-src');
-      source.removeAttribute('data-src');
-      promoVideo.load();
+      var embedUrl = promoVideo.getAttribute('data-src');
+      if (!embedUrl || promoVideo.src) return;
+      promoVideo.src = embedUrl;
+      promoVideo.removeAttribute('data-src');
     }
     if ('IntersectionObserver' in window) {
       var videoObserver = new IntersectionObserver(function (entries) {
