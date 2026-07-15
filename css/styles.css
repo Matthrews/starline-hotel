@@ -1437,3 +1437,263 @@ a:hover {
     text-align: center;
   }
 }
+
+/* ---- SEO Landing Pages ---- */
+.page-hero {
+  position: relative;
+  min-height: 52vh;
+  display: flex;
+  align-items: flex-end;
+  padding: calc(var(--header-h) + 48px) 0 56px;
+  color: var(--color-white);
+  overflow: hidden;
+  background: var(--color-primary-dark);
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.page-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 38, 48, 0.55) 0%,
+    rgba(15, 38, 48, 0.72) 45%,
+    rgba(15, 38, 48, 0.92) 100%
+  );
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent-light);
+}
+
+.breadcrumb span {
+  opacity: 0.5;
+}
+
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.page-hero-lead {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 28px;
+  max-width: 640px;
+}
+
+.seo-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.seo-prose h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  color: var(--color-primary);
+  margin: 40px 0 16px;
+}
+
+.seo-prose h2:first-child {
+  margin-top: 0;
+}
+
+.seo-prose p,
+.seo-prose li {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.seo-prose ul {
+  padding-left: 1.2em;
+  margin-bottom: 20px;
+}
+
+.seo-prose a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.seo-aside {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  display: grid;
+  gap: 20px;
+}
+
+.seo-card {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+}
+
+.seo-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.seo-card p,
+.seo-card li {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.seo-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seo-card li a {
+  color: var(--color-primary);
+}
+
+.seo-card li a:hover {
+  color: var(--color-accent);
+}
+
+.seo-card .btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.seo-related {
+  background: var(--color-bg-alt);
+}
+
+.seo-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.seo-related a {
+  display: block;
+  padding: 24px 20px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-primary);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.seo-related a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  color: var(--color-primary);
+}
+
+.seo-related strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.seo-related span {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.footer-grid--seo {
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+}
+
+.footer-seo h4 {
+  margin-bottom: 16px;
+}
+
+.footer-seo ul {
+  list-style: none;
+  columns: 1;
+}
+
+.footer-seo li {
+  margin-bottom: 8px;
+}
+
+.footer-seo a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.88rem;
+}
+
+.footer-seo a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 1024px) {
+  .seo-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .seo-aside {
+    position: static;
+  }
+
+  .seo-related-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid--seo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 46vh;
+    padding-bottom: 40px;
+  }
+
+  .seo-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid--seo {
+    grid-template-columns: 1fr;
+  }
+}

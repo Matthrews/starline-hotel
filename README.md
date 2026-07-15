@@ -5,12 +5,19 @@ A lightweight, SEO-friendly static website for **Starline Hotel** in Dodoma, Tan
 ## Pages & Sections
 
 - **Home** — Hero, amenities, brand intro
-- **Rooms** — 5 room types with indicative pricing
+- **Rooms** — 5 room types with TZS pricing
 - **Restaurant** — Dining information
 - **Conference Hall** — Business event facilities
-- **Gallery** — 20-photo lightbox gallery
+- **Gallery** — Photo lightbox gallery
 - **Location** — Google Maps embed, directions, contact info
-- **Book Now** — WhatsApp & phone CTAs
+- **SEO Guides** (acquisition landing pages):
+  - `/hotel-in-dodoma/` — hotel / hotels / accommodation in Dodoma
+  - `/affordable-hotel-dodoma/` — affordable hotel in Dodoma
+  - `/business-hotel-dodoma/` — business hotel in Dodoma
+  - `/conference-hall-dodoma/` — conference hall in Dodoma
+  - `/hotel-near-dodoma-airport/` — hotel near Dodoma Airport
+  - `/hotel-near-dodoma-sgr-station/` — hotel near Dodoma SGR Station
+- **Book Now** — WhatsApp & partner booking CTAs
 - **Review Us on Google** — Google Maps review link
 
 ## Local Preview
