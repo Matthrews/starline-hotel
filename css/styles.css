@@ -805,6 +805,25 @@ a:hover {
   transform: translateY(-50%);
 }
 
+/* ---- Promo Video ---- */
+.video-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-primary-dark);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 9;
+}
+
+.promo-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #0f2630;
+}
+
 /* ---- Location ---- */
 .location-grid {
   display: grid;

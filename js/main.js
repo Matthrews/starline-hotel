@@ -222,4 +222,29 @@
     goToReview(0);
     restartAuto();
   }
+
+  /* Lazy-load hotel promo video when near viewport */
+  var promoVideo = document.getElementById('promoVideo');
+  if (promoVideo) {
+    var source = promoVideo.querySelector('source[data-src]');
+    function loadPromoVideo() {
+      if (!source || source.src) return;
+      source.src = source.getAttribute('data-src');
+      source.removeAttribute('data-src');
+      promoVideo.load();
+    }
+    if ('IntersectionObserver' in window) {
+      var videoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            loadPromoVideo();
+            videoObserver.disconnect();
+          }
+        });
+      }, { rootMargin: '200px 0px' });
+      videoObserver.observe(promoVideo);
+    } else {
+      loadPromoVideo();
+    }
+  }
 })();
